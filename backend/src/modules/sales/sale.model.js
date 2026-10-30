@@ -10,11 +10,11 @@ const Sale = sequelize.define(
             primaryKey: true,
         },
         customerName: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(20),
             allowNull: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.STRING(200),
             allowNull: false,
         },
         date: {
@@ -25,7 +25,7 @@ const Sale = sequelize.define(
             type: DECIMAL(10, 2),
             allowNull: false,
         }
-    }, 
+    },
 );
 
 module.exports = Sale;

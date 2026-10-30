@@ -24,6 +24,10 @@ Product.belongsToMany(Sale, {
     onUpdate: 'CASCADE'
 });
 
+
+
+
+
 const syncDatabase = async () => {
     try {
         await sequelize.sync();
